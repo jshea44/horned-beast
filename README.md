@@ -10,9 +10,9 @@ Number and name of feature: Display Images
 
 Estimate of time needed to complete: 30 minutes
 
-Start time: 12:45
+Start time: 12:45pm
 
-Finish time: 1:02
+Finish time: 1:02pm
 
 Actual time needed to complete: 17 minutes
 
@@ -20,19 +20,19 @@ Actual time needed to complete: 17 minutes
 
 Number and name of feature: Allow Users to Favorite Individual Beasts
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 30 minutes
 
-Start time: _____
+Start time: 1:07pm
 
-Finish time: _____
+Finish time: 1:48pm
 
-Actual time needed to complete: _____
+Actual time needed to complete: 41 minutes
 
 ### Feature 3
 
 Number and name of feature: Bootstrap
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 30 minutes
 
 Start time: _____
 

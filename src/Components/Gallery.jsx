@@ -14,7 +14,13 @@ class Gallery extends React.Component {
         <HornedBeast title="Moose Corn 2" image_url="./src/assets/beast02.png" description="Another unicorn moose"/>
       </div>
       <section>
-        {beastData.map((beast, idx) => <HornedBeast key={idx} title={beast.title} image_url={beast.image_url} description={beast.description}/>)}
+        {beastData.map((beast, idx) => 
+          <HornedBeast 
+            key={idx} 
+            title={beast.title} 
+            image_url={beast.image_url} 
+            description={beast.description}/>
+            )}
       </section>
       </>
      
