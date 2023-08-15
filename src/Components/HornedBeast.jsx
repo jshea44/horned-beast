@@ -1,8 +1,8 @@
 import React from "react";
 
 class HornedBeast extends React.Component {
- constructor(props) {
-  super(props);
+ constructor() {
+  super();
  }
 
   
@@ -10,7 +10,7 @@ class HornedBeast extends React.Component {
     return (
       <div>
         <h2>{this.props.title}</h2>
-        <img src={this.props.imgUrl} alt="moose" title={this.props.title}/>
+        <img src={this.props.image_url}/>
         <p>{this.props.description}</p>
 
       </div>

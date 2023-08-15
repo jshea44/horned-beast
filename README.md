@@ -1,6 +1,44 @@
-# PROJECT NAME
+# HORNED BEAST
 
-project description goes here.
+Lists and describes horned beast creatures using React.
+
+## Time Estimates
+
+### Display Images
+
+Number and name of feature: Display Images
+
+Estimate of time needed to complete: 30 minutes
+
+Start time: 12:45
+
+Finish time: 1:02
+
+Actual time needed to complete: 17 minutes
+
+### Feature 2
+
+Number and name of feature: Allow Users to Favorite Individual Beasts
+
+Estimate of time needed to complete: _____
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
+
+### Feature 3
+
+Number and name of feature: Bootstrap
+
+Estimate of time needed to complete: _____
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
 
 ## Getting Started
 
