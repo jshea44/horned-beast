@@ -1,5 +1,6 @@
 import React from "react";
-import { Heart } from "react-bootstrap-icons"
+import { Heart } from "react-bootstrap-icons";
+import Figure from 'react-bootstrap/Figure';
 
 class HornedBeast extends React.Component {
  constructor() {
@@ -16,14 +17,26 @@ class HornedBeast extends React.Component {
   
   render() {
     return (
-      <div>
-        <Heart />
-        <p>{`Favorites: ${this.state.timesFavorited}`}</p>
+      
+      <Figure>
         <h2>{this.props.title}</h2>
-        <img src={this.props.image_url} onClick={this.handleClick}/>
-        <p>{this.props.description}</p>
+        <Figure.Image
+          // title= {this.props.title}
+          width={200}
+          height={200}
+          alt="171x180"
+          src={this.props.image_url}
+          onClick={this.handleClick}
 
-      </div>
+        />
+        <Figure.Caption>
+          {this.props.description}
+        </Figure.Caption>
+        <Figure.Caption>
+          <Heart />
+          {`Favorites: ${this.state.timesFavorited}`}
+        </Figure.Caption>
+      </Figure>
     )
   }
 }

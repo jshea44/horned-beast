@@ -34,7 +34,7 @@ Number and name of feature: Bootstrap
 
 Estimate of time needed to complete: 30 minutes
 
-Start time: _____
+Start time: 1:57pm
 
 Finish time: _____
 
