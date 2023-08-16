@@ -22,9 +22,9 @@ class HornedBeast extends React.Component {
         <h2>{this.props.title}</h2>
         <Figure.Image
           // title= {this.props.title}
-          width={200}
-          height={200}
-          alt="171x180"
+          width={300}
+          // height={300}
+          alt="Picture of horned beast"
           src={this.props.image_url}
           onClick={this.handleClick}
 
