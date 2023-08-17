@@ -4,9 +4,9 @@ Lists and describes horned beast creatures using React.
 
 ## Time Estimates
 
-### Display Images
+### Lab 02
 
-Number and name of feature: Display Images
+#### Feature 1: Display Images
 
 Estimate of time needed to complete: 30 minutes
 
@@ -16,9 +16,7 @@ Finish time: 1:02pm
 
 Actual time needed to complete: 17 minutes
 
-### Feature 2
-
-Number and name of feature: Allow Users to Favorite Individual Beasts
+#### Feature 2: Allow Users to Favorite Individual Beasts
 
 Estimate of time needed to complete: 30 minutes
 
@@ -28,9 +26,7 @@ Finish time: 1:48pm
 
 Actual time needed to complete: 41 minutes
 
-### Feature 3
-
-Number and name of feature: Bootstrap
+#### Feature 3: Bootstrap
 
 Estimate of time needed to complete: 30 minutes
 
@@ -39,6 +35,18 @@ Start time: 1:57pm
 Finish time: 2:35pm
 
 Actual time needed to complete: 38 minutes
+
+### Lab 03
+
+#### Feature 1: Display a Modal
+
+Estimate of time needed to complete: 60 minutes
+
+Start time: 1:30pm
+
+Finish time: 9:06pm (Not in one sitting)
+
+Actual time needed to complete: A few hours at least.
 
 ## Getting Started
 
@@ -81,6 +89,10 @@ Any environment configuration steps.
 ## Architecture
 
 ### Languages & tools
+
+    - React
+    - Vite
+    - ChatGPT
 
 ## Change Log
 
