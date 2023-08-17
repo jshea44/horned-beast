@@ -1,6 +1,7 @@
 import React from "react";
 import { Heart } from "react-bootstrap-icons";
-import Figure from 'react-bootstrap/Figure';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
 class HornedBeast extends React.Component {
  constructor() {
@@ -16,27 +17,24 @@ class HornedBeast extends React.Component {
 
   
   render() {
+
     return (
       
-      <Figure>
-        <h2>{this.props.title}</h2>
-        <Figure.Image
-          // title= {this.props.title}
-          width={300}
-          // height={300}
+      <Card>
+        <Card.Img
           alt="Picture of horned beast"
           src={this.props.image_url}
-          onClick={this.handleClick}
-
+          onClick={this.props.onClick}
         />
-        <Figure.Caption>
-          {this.props.description}
-        </Figure.Caption>
-        <Figure.Caption>
+        <Card.Title>
+          {this.props.title}
+        </Card.Title>
+        <Card.Text>
           <Heart />
           {`Favorites: ${this.state.timesFavorited}`}
-        </Figure.Caption>
-      </Figure>
+        </Card.Text>
+        <Button variant="primary" onClick={this.handleClick}>Click to Favorite</Button>
+      </Card>
     )
   }
 }
