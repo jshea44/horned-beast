@@ -28,6 +28,8 @@ class Gallery extends React.Component {
   render() {
     const beastsPerRow = 3; 
     const rows = [];
+
+    
   
     for (let i = 0; i < beastData.length; i += beastsPerRow) {
       const rowBeasts = beastData.slice(i, i + beastsPerRow);
