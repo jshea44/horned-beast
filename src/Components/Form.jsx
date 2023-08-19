@@ -2,6 +2,8 @@ import React from "react";
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import beastData from "../assets/data.json";
+
 
 class SortingForm extends React.Component{
   constructor() {
@@ -50,8 +52,8 @@ class SortingForm extends React.Component{
           <Modal.Footer>
             <Button variant="secondary" onClick={this.closeModal}>Close</Button>
             <Button variant="primary" onClick={() => {
-              // Call a function to filter your data based on selectedHorns
-              // For example: this.props.filterByHorns(this.state.selectedHorns);
+              console.log('SELECTING FILTER!');
+              this.props.filterByHorns(this.state.selectedHorns);
               this.closeModal();
             }}>
               Apply

@@ -6,6 +6,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
+import SortingForm from './Form';
+// import hornedBeastData from './assets/data.json'
 
 class Gallery extends React.Component {
   constructor() {
@@ -13,6 +15,7 @@ class Gallery extends React.Component {
     this.state = {
       showModal: false,
       selectedBeast: null,
+      numberOfHorns: null,
     }
   }
 
@@ -24,15 +27,31 @@ class Gallery extends React.Component {
     this.setState({ showModal: false, selectedBeast: null});
   }
 
+  // filterByHorns = (selectedHorns) => {
+  //   selectedHorns.filter(() => {
+
+  //   });
+  // };
+
 
   render() {
     const beastsPerRow = 3; 
     const rows = [];
+    const filterBeasts = beastData.filter((beast) => {
+      console.log(this.state.numberOfHorns);
+      if (this.state.numberOfHorns) {
+        if (beast.horns == this.state.numberOfHorns || this.state.numberOfHorns === "All") {
+          return true
+        }
+        return false
+      }
+      return true;
+    });
 
     
   
-    for (let i = 0; i < beastData.length; i += beastsPerRow) {
-      const rowBeasts = beastData.slice(i, i + beastsPerRow);
+    for (let i = 0; i < filterBeasts.length; i += beastsPerRow) {
+      const rowBeasts = filterBeasts.slice(i, i + beastsPerRow);
   
       const row = (
         <Row key={i}>
@@ -52,6 +71,7 @@ class Gallery extends React.Component {
     }
     return (
       <>
+      <SortingForm filterByHorns={(number) => this.setState({ numberOfHorns: number })} /> {/* Pass down the function */} 
         <Container>
           {rows}
         </Container>
